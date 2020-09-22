@@ -1,4 +1,25 @@
+body {
+    font-size: 16px;
+}
+
 #map {
     height: 60vh;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
+    margin-top: 3rem;
+}
+
+.map-btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    margin: 1rem .5rem 1rem;
+    color: white;
+    background-color: darkslategray;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+.map-btn:hover {
+    transform: scale(1.1);
 }

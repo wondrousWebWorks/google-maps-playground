@@ -7,26 +7,20 @@
     <title>Google Maps Playground</title>
 </head>
 <body>
-    <h3>My Google Maps Demo</h3>
+    <h1>Google Maps Buttons Demo</h1>
+    <a id="beaches-btn" class="map-btn">Beaches</a>
+    <a id="parks-btn" class="map-btn">Parks</a>
     <!--The div element for the map -->
     <div id="map"></div>
-    <script>
-        // Initialize and add the map
-        function initMap() {
-        // The location of Dublin
-        var dublin = {lat: 53.345149, lng: -6.264};
-        // The map, centered at Dublin
-        var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 12, center: dublin});
-        // The marker, positioned at Dublin
-        var marker = new google.maps.Marker({position: dublin, map: map});
-        }
-    </script>
+
+    <script src="static/js/maps.js"></script>
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
     * The key parameter will contain your own API key (which is not needed for this tutorial)
     * The callback parameter executes the initMap() function
     -->
+    <script src="https://unpkg.com/@google/markerclustererplus@5.1.0/dist/markerclustererplus.min.js"></script>
+    </script>
     <script defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDliSbXIDb2KfaHKsB5BB60-kCMZ9U63Bc&callback=initMap">
     </script>
